@@ -10,4 +10,4 @@ RUN export DEBIAN_FRONTEND=noninteractive \
  && apt-get -q -y clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
  \
- &&  && echo 'zoom' >> /container/scripts/app
+ && echo 'zoom' >> /container/scripts/app
