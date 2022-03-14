@@ -1,7 +1,7 @@
-# Zoom
-_Zoom_
+# virt-manager
+_virt-manager_
 
-This is a container for the famous `zoom` the video and audio conferencing, chat, and webinars desktop application [x86].
+This is a container for `virt-manager` virtual machine managment tool.
 
 It's based on [desktopcontainers/base-debian](https://github.com/DesktopContainers/base-debian)
 

@@ -1,9 +1,10 @@
 version: '3'
  
 services:
-  zoom:
+  virt-manager:
     build: .
-    image: desktopcontainers/zoom
+    image: desktopcontainers/virt-manager
+    network_mode: bridge
     restart: always
     environment:
       SERVER_NAME: localhost
@@ -13,9 +14,6 @@ services:
       #ENABLE_SUDO: enable
       #ENABLE_KIOSK: enable
     volumes:
-      - ./certs:/certs
+      - ~/.ssh:/home/app/.ssh:ro
     ports:
-      - "2222:22"
-      - "8080:80"
-      - "4443:443"
-      - "5900:5900"
+      - 22
