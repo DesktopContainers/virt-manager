@@ -1,4 +1,7 @@
 #!/bin/sh
+DIR=$(dirname "$0")
+cd "$DIR"
+
 docker-compose up -d
 PORT=$(docker ps | grep desktopcontainers/virt-manager | tr ' ' '\n' | grep '\->' | sed -n 's/.*:\([0-9]*\)->.*/\1/gp' )
 
